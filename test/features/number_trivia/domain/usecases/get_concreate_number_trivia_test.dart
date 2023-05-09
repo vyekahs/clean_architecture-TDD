@@ -8,15 +8,12 @@ import 'package:mockito/annotations.dart';
 
 import 'get_concreate_number_trivia_test.mocks.dart';
 
-class MockNumberTriviaRepository extends Mock
-    implements NumberTriviaRepository {}
-
-@GenerateMocks([MockNumberTriviaRepository])
+@GenerateMocks([NumberTriviaRepository])
 void main() {
   late GetConcreteNumberTrivia usecase;
-  late MockMockNumberTriviaRepository mockNumberTriviaRepository;
+  late MockNumberTriviaRepository mockNumberTriviaRepository;
   setUp(() {
-    mockNumberTriviaRepository = MockMockNumberTriviaRepository();
+    mockNumberTriviaRepository = MockNumberTriviaRepository();
     usecase = GetConcreteNumberTrivia(mockNumberTriviaRepository);
   });
 
