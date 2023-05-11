@@ -11,7 +11,7 @@ import 'package:clean_architecture/features/number_trivia/data/datasources/numbe
     as _i3;
 import 'package:clean_architecture/features/number_trivia/data/models/number_trivia_model.dart'
     as _i2;
-import 'package:clean_architecture/platform/network_info.dart' as _i6;
+import 'package:clean_architecture/network/network_info.dart' as _i6;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint

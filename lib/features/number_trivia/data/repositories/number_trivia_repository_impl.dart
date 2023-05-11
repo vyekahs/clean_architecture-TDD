@@ -4,10 +4,10 @@ import 'package:clean_architecture/features/number_trivia/domain/repositories/nu
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/error/exceptions.dart';
-import '../../../../platform/network_info.dart';
 import '../datasources/number_trivia_local_data_source.dart';
 import '../datasources/number_trivia_remote_data_source.dart';
 import '../models/number_trivia_model.dart';
+import '../../../../network/network_info.dart';
 
 typedef Future<NumberTriviaModel> _ConcreteOrRandomChooser();
 
